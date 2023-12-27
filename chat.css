@@ -2,5 +2,5 @@
 
 body {
     .vfrc-chat--dialog {Meddelande2}
-    .vf-chat-input {Meddelande..}
+    .vf-chat-input {Meddelande..} placeholder="Meddelande…"
 }
