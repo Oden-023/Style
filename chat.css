@@ -1,7 +1,7 @@
 body {
-    .vf-chat-input,
-    .vfrc-chat--session-time >Idag<,
-    <span class="vfrc-chat--session-time">Idag</span>
-    .vfrc-widget--chat 
-    <textarea id="vf-chat-input--" placeholder="Meddelande…" style="height: 38px !important;"></textarea>
+    .vfrc-chat--session-time >Idag<
+    <span class="vfrc-chat--session-time">Idag</span>,
+    .vfrc-widget--chat,
+    <textarea id="vf-chat-input--" placeholder="Meddelande…" style="height: 38px !important;"></textarea>,
+    .vfrc-input {placeholder="Meddelande..."}
 }
