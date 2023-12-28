@@ -1,6 +1,5 @@
 /* This is the stylesheet.css file */
 
 body {
-    .vfrc-chat--dialog {Meddelande2}
-    .vf-chat-input {Meddelande..} placeholder="Meddelande…"
+    .vf-chat-input {placeholder="Meddelande…"} 
 }
