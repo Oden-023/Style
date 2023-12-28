@@ -1,9 +1,55 @@
-body {
-    .vfrc-chat--session-time {>Idag< 
-    <span class="vfrc-chat--session-time">Idag</span>},
-    .vfrc-widget--chat,
-    <textarea id="vf-chat-input--" placeholder="Meddelande…" style="height: 38px !important;"></textarea>,
-    .vfrc-input {placeholder="Meddelande..."}
-    <div class="vfrc-prompt"><button tabindex="-1" label="Avsluta Chat" class="vfrc-button vfrc-button--primary type-warn">Avsluta Chat</button><button tabindex="-1" label="Avbryt" class="vfrc-button vfrc-button--primary type-subtle">Avbryt</button></div>
+.vfrc-chat--session-time,
+.vfrc-chat--status {
+  display: none;
 }
- 
+
+.vfrc-timestamp {
+  color: transparent;
+}
+
+.vfrc-chat-input textarea {
+  background-image: none;
+}
+.vfrc-chat-input textarea::-moz-placeholder {
+  color: transparent;
+}
+.vfrc-chat-input textarea::placeholder {
+  color: transparent;
+}
+
+button.vfrc-button--primary {
+  position: relative;
+  color: transparent !important;
+}
+button.vfrc-button--primary::after {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  inset: 0;
+  color: #ffffff;
+}
+button.vfrc-button--primary[label=Cancel]::after {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.vfrc-chat-input textarea:-moz-placeholder-shown {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='250px'><text x='15' y='25' fill='silver' font-family='verdana' font-size='15'>Meddela...</text></svg>");
+  background-repeat: no-repeat;
+}
+
+.vfrc-chat-input textarea:placeholder-shown {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='250px'><text x='15' y='25' fill='silver' font-family='verdana' font-size='15'>Meddela...</text></svg>");
+  background-repeat: no-repeat;
+}
+
+button.vfrc-button--primary::after {
+  content: "Starta Ny Chatt";
+}
+button.vfrc-button--primary[label="End Chat"]::after {
+  content: "Avsluta Chatt";
+}
+button.vfrc-button--primary[label=Cancel]::after {
+  content: "Avbryt";
+  color: rgba(0, 0, 0, 0.9);
+}
